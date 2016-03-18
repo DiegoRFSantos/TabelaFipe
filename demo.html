@@ -1,0 +1,46 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Demonstração</title>
+<style>
+/*O script não depende deste css para funcionar*/
+div{
+	text-align:center;
+	margin-top:10%;
+}
+
+select{
+	border-radius:5px;
+	border: solid 1px #CACACA;
+	min-width:350px;
+	height:32px;
+	text-indent:10px;
+	padding:5px;
+	color:#6D6D6D;
+	font-weight:bold;
+}
+
+
+</style>
+
+
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/JQuery.tabela.fipe.1.0.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#selMarca").tabelaFipe({marca:'selMarca',carros:'selCarro',modelos:'selModelo'});
+});
+</script>
+</head>
+
+<body>
+
+<div>
+    <select id="selMarca"></select><br><br><br>
+    <select id="selCarro"><option selected> --- </option></select><br><br><br>
+    <select id="selModelo"><option selected> --- </option></select>
+</div>
+
+</body>
+</html>
